@@ -10,10 +10,13 @@ const server =
       res.setHeader('Content-Type', 'text/html') //Set the mime type HTML
 
       res.write('<html> <head> <title> Served </title> </head>')
-      res.write('<body>')
-      res.write('Content \n')
-      res.write('More content \n')
-      res.write('Hello World')    
+      res.write('<table>')
+      res.write('<tr> <th>Location</th><th>Stay</th><th>Budget</th></tr>')
+      res.write('<tr><td>San Francisco</td><td>3</td><td>350</td> </tr>')
+      res.write('<tr><td>Los Angeles</td><td>1</td><td>150</td> </tr>')
+      res.write('<tr><td>San Diego</td> <td>2</td> <td>170</td> </tr>')
+      res.write('<tr><td>Santa Barbara</td><td>1</td><td>300</td></tr>')
+      res.write('</table>')  
       res.end('</body></html>')
       //Close the response
     }                           
